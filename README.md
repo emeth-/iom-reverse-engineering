@@ -1,38 +1,78 @@
-To reverse engineer the game rules, I started from an open source version of the game made in Java by darkflagrance:
+# Invasion of Meridell
 
-Source: https://drive.google.com/drive/folders/0B2Y0VMXUm08mRkNremE5ZVV0bnc
-Download: https://drive.google.com/file/d/0B2Y0VMXUm08maEFyTE5meG9hOFk/view?usp=sharing
-Announcement: http://www.bay12forums.com/smf/index.php?topic=154262.0
+Invasion of Meridell was a fun turn based game that existed in Neopets up until 2011 (?), when it was permanently removed due to it being exploited (TODO, fill in details here).
 
-Starting with his base values for all missions, I then compared to all guides, screenshots, and videos of the game I can find online. I saved screenshots of all online sources in the game_data/map_layouts/ mission folders, you can review them there.
+## Resources Available
 
-# Treasures
+First, the resources we have available to use to reverse engineer the game.
 
-All treasures were correct in the Java version, verified by numerous screenshots online. No changes necessary.
+Game Guides:
+* http://www.jellyneo.net/?go=invasion_of_meridell
+* http://www.thedailyneopets.com/neopets-games/invasion-of-meridell/
+* https://www.neofriends.net/threads/guide-invasion-of-meridell-in-depth.26528/
+* http://www.neocodex.us/forum/topic/109241-invasion-of-meridell-guide/
+* http://neopointsdeals.com/neopets-invasion-of-meridell-guide/
+* http://home.neopets.com/templates/homepage.phtml?pet_name=happylark
+* http://www.neopets.com/~Demeanours
+* http://www.angelfire.com/pop2/krillin373/invasionm.html
+* https://www.pinkpt.com/neodex/index.php?title=Invasion_of_Meridell
 
-# Potions
+Youtube Videos:
+* https://www.youtube.com/watch?v=QJCtRCyfVww (levels 1, 2, 3)
+* https://www.youtube.com/watch?v=644qdG2yd1w
+
+[2015] Java Clone of game (author = darkflagrance):
+- [Announcement](http://www.bay12forums.com/smf/index.php?topic=154262.0)
+- [Source](https://drive.google.com/open?id=0B2Y0VMXUm08mRkNremE5ZVV0bnc)
+- [Compiled Game](https://drive.google.com/file/d/0B2Y0VMXUm08maEFyTE5meG9hOFk/view?usp=sharing)
+
+## Reverse Engineering Strategy
+
+The 2015 Java Clone is a complete clone of the game - albeit imperfect.
+
+Our reverse engineering strategy is to start with the values in the 2015 Java Clone, then attempt to correct them based off our other resources (guides/videos).
+
+In terms of trust...
+
+* [Highest Trust] Images of the game from guides/youtube videos, as they are screencaps of the actual game being played (and there was no value in faking them at the time)
+* [Medium Trust] Text from guides / youtube video description, as they were written while the actual game was live.
+* [Low Trust] The 2015 Java clone falls in this category, as it was written 4 years after the game disappeared
+
+With that in mind, we will cycle through each section of the game, review the Java values, and correct them.
+
+### Treasures
+
+All treasures were correct in the 2015 Java clone, verified by numerous screenshots online. No changes necessary.
+
+### Potions
 
 * Mission 1 = Health_Potion, verified in screenshots
 * Mission 2 = Potion_of_Fortitude, verified in screenshots
 * Mission 3 = Mega_Potion, verified in screenshots
 * Mission 4 = Potion_of_Well-Being, verified in screenshots
 * Mission 5 = Potion_of_Fortitude, verified in screenshots
-* Mission 6 = Potion_of_Well-Being, verified in screenshots. Note Java version improperly puts Mega_Potion here.
-* Mission 7 = Potion_of_Fortitude, verified in screenshots. Note Java version improperly puts Potion_of_Well-Being here.
-* Mission 8 = Mega_Potion, verified in screenshots. Note Java version improperly puts Potion_of_Fortitude here.
+* Mission 6 = Potion_of_Well-Being, verified in screenshots. (Java clone incorrectly puts Mega_Potion here)
+* Mission 7 = Potion_of_Fortitude, verified in screenshots. (Java clone incorrectly puts Potion_of_Well-Being here)
+* Mission 8 = Mega_Potion, verified in screenshots. (Java clone incorrectly puts Potion_of_Fortitude here)
+* Mission 9 = ??? (Java clone puts Mega_Potion here)
+* Mission 10 = ??? (Java clone puts Potion_of_Well-Being here)
 
-Missions 9 and 10 lack screenshots. The Java version uses Mega_Potion for Mission 9 - but as we discovered, Mega_Potion was in Mission 8, and there is no spot in the first 8 missions where a mission uses the same potion from a previous mission... I felt Mega_Potion was probably wrong.
+There are no records in guides/videos from what potions are in Missions 9 and 10.
 
-We do note a slight pattern... Excluding missions 1 (which uses a unique potion) and 2, the next 6 missions go Mega / Well-Being / Fortitude and then Well-Being / Fortitude / Mega.
+We've already established that the Java clone was incorrect in its values for Missions 6, 7, and 8 - so it is likely incorrect for 9 and 10 as well.
 
-Based on this, I did the following:
+Pattern-wise in the 8 missions we were able to verify, there isn't a lot to go on.
 
-* Mission 9 = Potion_of_Well-Being. Note Java version uses Mega_Potion.
-* Mission 10 = Potion_of_Fortitude. Note Java version uses Potion_of_Well-Being.
+Missions 3-8 go Mega / Well-Being / Fortitude and then Well-Being / Fortitude / Mega, which could indicate a recurring pattern which would next become Fortitude / Mega / Well-Being (popping the left-most element and putting it on the right).
 
-Note that in the end it's not super important, as I believe all potions have the same effect - it's merely a visual thing.
+There are only 4 potions, but 10 missions - so two potions (at least) would need to be used 3 times. We already see Fortitude being used 3 times, Mega and Well Being both twice, and Health just once... but then again, the Health potion seems basic, and may just be intended to be on the introductory level.
 
-# Attack Items
+As all potions heal pets to full health and thus have no affect on gameplay other than asthetics, I've decided to just let this go and just go with the below values:
+
+* Mission 9 = Potion_of_Well-Being. (Java clone puts Mega_Potion here)
+* Mission 10 = Health_Potion. (Java clone puts Potion_of_Well-Being here)
+
+### Attack Items
 
 Every mission will spawn four items - two Attack items, and two Defense items.
 
@@ -61,7 +101,7 @@ There is some randomness in which weapon combinations will spawn. For example, i
 
 
 
-# Defense Items
+### Defense Items
 
 * Mission 1 = ["Magic_Staff_of_Thunder", "Magic_Staff_of_Thunder"]. All screenshots and guides show double Magic_Staff_of_Thunder, as does the Java clone.
 
@@ -83,19 +123,19 @@ There is some randomness in which weapon combinations will spawn. For example, i
 
 * Mission 10 = ["Plate_Armor", "Chainmail"]. We have no screenshots or guides for this, so we'll just accept the Java clone's value.
 
-# Foes
+### Foes
 
 All foes spawns were correct in the Java clone for Missions 1-8 that we were able to verify with screenshots. Therefore, we just trust the Java clone to be correct for Missions 9 and 10.
 
-# Map - Mountains
+### Map - Mountains
 
 Reviewing all game board screenshots, we see there are all four sets of two mountains, and they are connected symmetrically by row. Each set of two mountains may spawn on the far right and left, or one block in from the right and left, or in the middle two squares. The only exception is the top-most row, which if it spawns in the middle, then the left mountain remains an empty space (because in later levels an enemy troop will spawn in that square).
 
-# Map - Villages
+### Map - Villages
 
 The villages always spawn in rows 2-4 (counting from the bottom up). There are two villages per row, and each row has one in the first 5 squares and one in the second 5 squares.
 
-# Map - Items
+### Map - Items
 
 Potions always spawn in the same two slots.
 
@@ -103,7 +143,7 @@ Attack/Defense items always spawn in rows 2-6 (counting from the bottom up). Not
 
 I believe that it is a purely random chance, but my screenshots make it seem like rows 4-6 have a greater chance of getting items. I believe this is just due to the fact that villages spawn in the lower rows, reducing the number of empty squares and thus reducing the likelihood for items to spawn there.
 
-# List of Unknowns
+### List of Unknowns
 
 * We do not know which potions spawn in Mission 9 and 10. (Does not change gameplay)
 
