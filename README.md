@@ -28,7 +28,7 @@ Youtube Videos:
 
 ## Reverse Engineering Strategy
 
-The 2015 Java Clone is a complete clone of the game - albeit imperfect.
+The 2015 Java Clone is a complete clone of the game - albeit imperfect (his goal seemed to be to recreate the experience and adjust the values as he saw fit, not necessarily to perfectly match the original game).
 
 Our reverse engineering strategy is to start with the values in the 2015 Java Clone, then attempt to correct them based off our other resources (guides/videos).
 
