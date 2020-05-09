@@ -31,6 +31,21 @@ Youtube Videos:
 * [Source](https://drive.google.com/open?id=0B2Y0VMXUm08mRkNremE5ZVV0bnc)
 * [Compiled Game](https://drive.google.com/file/d/0B2Y0VMXUm08maEFyTE5meG9hOFk/view?usp=sharing)
 
+### A note on IOM Versions
+As I reviewed the guides still available, I noted something unexpected.
+
+There appear to have been multiple iterations of IOM. 
+
+The first version was just what we now call 'wave 1', missing missions 6-10. It seemed to last for only a short time, as it's only mentioned briefly in a single guide.
+
+The second version added 'wave 2', and it's state is best described in [this guide](http://www.neopets.com/~GoldEyeGriffin) - it's divergences from version 3 (the final version) are that it appears Grarrl/Buzz couldn't enchant and block skeith teleport and grundo heal, and as a result moehog/techo couldn't disenchant those enchantments, and thus it made more sense to ditch your weak units (as opposed to version 3, where you virtually always keep your original units). This second version seemed to exist for some time, as I found 2 guides explicitly following it, and a few others that could be pointing to it.
+
+The third version appears to have added the enchantment concept, and made a slight tweak to item spawns. Additionally, I *think* but cannot verify that Grarrl/Buzz stats were changed - instead of being identical, Buzz was changed to strong defense / weak attack, and Grarrl was made strong attack / weak defense. This third version also existed for a while, as it has the most guides describing it.
+
+This clone attempts to match the third version of the game. 
+
+Note, the Java Clone author also [notes these differences](https://tdnforums.com/topic/45831-im-rebuilding-invasion-of-meridell-as-its-own-program/), saying "There have been multiple versions of Invasion of Meridell over the years, with different mechanics and items sets."
+
 ## Reverse Engineering Strategy
 
 The 2015 Java Clone is a complete clone of the game - albeit imperfect (his goal seemed to be to recreate the experience and adjust the values as he saw fit, not necessarily to perfectly match the original game).
@@ -40,7 +55,7 @@ Our reverse engineering strategy is to start with the values in the 2015 Java Cl
 In terms of trust...
 
 * [Highest Trust] Images of the game from guides/youtube videos, as they are screencaps of the actual game being played (and there was no value in faking them at the time)
-* [Medium Trust] Text from guides / youtube video description, as they were written while the actual game was live.
+* [Medium Trust] Text from guides / youtube video description, as they were written while the actual game was live. Note that some guides have lower trust as they describe v2 of the game (and we're cloning v3)
 * [Low Trust] The 2015 Java clone falls in this category, as it was written 4 years after the game disappeared
 
 With that in mind, we will cycle through each section of the game, review the Java values, and correct them.
