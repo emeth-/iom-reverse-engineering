@@ -8,9 +8,9 @@ First, the resources we have available to use to reverse engineer the game.
 
 Game Guides:
 * http://www.jellyneo.net/?go=invasion_of_meridell
-* http://www.neopets.com/~happylark (mirror)
-* http://www.neopets.com/~Demeanours (mirror)
-* http://www.neopets.com/~GoldEyeGriffin (mirror)
+* http://www.neopets.com/~happylark ([mirror](https://emeth-.github.io/iom-reverse-engineering/online_guides/backups_of_guides/happylark.html))
+* http://www.neopets.com/~Demeanours ([mirror](https://emeth-.github.io/iom-reverse-engineering/online_guides/backups_of_guides/demeanours%20got%20their%20homepage%20at%20Neopets.com.html))
+* http://www.neopets.com/~GoldEyeGriffin ([mirror](https://emeth-.github.io/iom-reverse-engineering/online_guides/backups_of_guides/GoldEyeGriffin%20got%20their%20homepage%20at%20Neopets.com.html))
 * http://pcal11.tripod.com/million/id30.html
 * http://www.thedailyneopets.com/neopets-games/invasion-of-meridell/
 * https://www.neofriends.net/threads/guide-invasion-of-meridell-in-depth.26528/
@@ -34,7 +34,7 @@ Youtube Videos:
 ### A note on IOM Versions
 As I reviewed the guides still available, I noted something unexpected.
 
-There appear to have been multiple iterations of IOM. 
+There appear to have been multiple iterations of IOM.
 
 The first version was just what we now call 'wave 1', missing missions 6-10. It seemed to last for only a short time, as it's only mentioned briefly in a single guide.
 
@@ -42,7 +42,7 @@ The second version added 'wave 2', and it's state is best described in [this gui
 
 The third version appears to have added the enchantment concept, and made a slight tweak to item spawns. Additionally, I *think* but cannot verify that Grarrl/Buzz stats were changed - instead of being identical, Buzz was changed to strong defense / weak attack, and Grarrl was made strong attack / weak defense. This third version also existed for a while, as it has the most guides describing it.
 
-This clone attempts to match the third version of the game. 
+This clone attempts to match the third version of the game.
 
 Note, the Java Clone author also [notes these differences](https://tdnforums.com/topic/45831-im-rebuilding-invasion-of-meridell-as-its-own-program/), saying "There have been multiple versions of Invasion of Meridell over the years, with different mechanics and items sets."
 
