@@ -27,7 +27,7 @@ Youtube Videos:
 * https://web.archive.org/web/20040206045508/http://home.pacbell.net/jeffpeck/iomscript.html
 
 [2015] Java Clone of game (author = darkflagrance):
-* [Announcement](http://www.bay12forums.com/smf/index.php?topic=154262.0)
+* [Announcement 1](http://www.bay12forums.com/smf/index.php?topic=154262.0), [Announcement 2](https://tdnforums.com/topic/45831-im-rebuilding-invasion-of-meridell-as-its-own-program/)
 * [Source](https://drive.google.com/open?id=0B2Y0VMXUm08mRkNremE5ZVV0bnc)
 * [Compiled Game](https://drive.google.com/file/d/0B2Y0VMXUm08maEFyTE5meG9hOFk/view?usp=sharing)
 
