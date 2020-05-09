@@ -11,6 +11,7 @@ Game Guides:
 * http://www.neopets.com/~happylark (mirror)
 * http://www.neopets.com/~Demeanours (mirror)
 * http://www.neopets.com/~GoldEyeGriffin (mirror)
+* http://pcal11.tripod.com/million/id30.html
 * http://www.thedailyneopets.com/neopets-games/invasion-of-meridell/
 * https://www.neofriends.net/threads/guide-invasion-of-meridell-in-depth.26528/
 * http://www.neocodex.us/forum/topic/109241-invasion-of-meridell-guide/
