@@ -1,6 +1,6 @@
 # Invasion of Meridell
 
-Invasion of Meridell was a fun turn based game that existed in Neopets up until 2011 (?), when it was permanently removed due to it being exploited (TODO, fill in details here).
+Game source code made from these reverse engineering notes available in [this repository](https://github.com/emeth-/invasion-of-meridell).
 
 ## Resources Available
 
