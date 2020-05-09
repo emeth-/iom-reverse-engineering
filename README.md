@@ -143,6 +143,18 @@ Attack/Defense items always spawn in rows 2-6 (counting from the bottom up). Not
 
 I believe that it is a purely random chance, but my screenshots make it seem like rows 4-6 have a greater chance of getting items. I believe this is just due to the fact that villages spawn in the lower rows, reducing the number of empty squares and thus reducing the likelihood for items to spawn there.
 
+### Pet Stats
+
+[Enemies stats reviewed here](foe_pet_stats.md)
+
+[Allies stats reviewed here](friendly_pet_stats.md), and [also here](pet_stats.md)
+
+### Misc
+
+[Spells reviewed here](spells.md)
+
+[Shields reviewed here](shields.md)
+
 ### List of Unknowns
 
 * We do not know which potions spawn in Mission 9 and 10. (Does not change gameplay)
