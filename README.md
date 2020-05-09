@@ -100,7 +100,7 @@ There is some randomness in which weapon combinations will spawn. For example, i
 
 * Mission 1 = ["Mace", "Broadsword"]. Verified in screenshots
 
-* Mission 2 = ["Bow", "Hammer"]. Two screenshots have double bows. One screenshot shows a broadsword, which was likely picked up in Mission 1 and then dropped here when a new weapon was picked up. The Java clone includes Hammer, which we are unable to verify, but we include it here because it's the same base stat-line as bow and if we don't put it here it wouldn't fit anywhere.
+* Mission 2 = ["Bow", "Hammer"]. Two screenshots have double bows. One screenshot shows a broadsword, which was likely picked up in Mission 1 and then dropped here when a new weapon was picked up. The Java clone includes Hammer, and [this guide](https://emeth-.github.io/iom-reverse-engineering/online_guides/backups_of_guides/GoldEyeGriffin%20got%20their%20homepage%20at%20Neopets.com.html) includes hammer (albeit for iom v2).
 
 * Mission 3 = ["Magic_Force_Spell", "Magic_Force_Spell"]. We have three unique game screenshots, all three of which have double Magic_Force_Spell spawned. The Java clone includes Berserker_Battleaxe as a possible spawn here - but I believe that is incorrect. None of our three unique screenshots support that. Also there is an advanced guide at http://www.neopets.com/~Demeanours which shows the items his team holds after beating Mission 3 and Mission 4, and in neither of them does any soldier have a Berserker_Battleaxe, even though it would be far better than the Magic_Force_Spell they are holding. So with that, I'm removing Berserker_Battleaxe from this spawn, and doing double Magic_Force_Spell, which fits all our screenshots and the guide.
 
@@ -110,13 +110,13 @@ There is some randomness in which weapon combinations will spawn. For example, i
 
 * Mission 6 = ["Sword_of_Deflection", "Sword_of_Deflection"]. Our one start of match screenshot has double Sword_of_Deflection. On a mid-game screenshot, a Berserker_Battleaxe is seen. However, it is within the path of the Techo, who likely dropped it to pickup a Sword_of_Deflection - so I believe the Berserker_Battleaxe was not spawned in this Mission, but just carried over from the previous mission and then dropped.
 
-* Mission 7 = ["Double_Sword", "Halberd"]. We have two Mission 7 screenshots, and both are double Halberds. The guide at http://home.neopets.com/templates/homepage.phtml?pet_name=happylark notes that it's unnecessary to pick up Halberds here, as their attack bonuses (+4) aren't any better than what you already have. The Java clone includes "Double_Sword" here, which is identical in stats to the Sword of Deflection from the last level but without the ability to disenchant. I elected to keep this spawn chance here, even though not supported by screenshots, because the java game has it, and it fits in with the guide's note that the weapons here aren't worth picking up because they aren't better than what you already have (so gameplay is unchanged if I'm wrong and its Halberd). Also if Double_Sword does not go here... then it doesn't have a mission it spawns in.
+* Mission 7 = ["Double_Sword", "Halberd"]. We have two Mission 7 screenshots, and both are double Halberds. [This guide](https://emeth-.github.io/iom-reverse-engineering/online_guides/backups_of_guides/happylark.html) notes that it's unnecessary to pick up Halberds here, as their attack bonuses (+4) aren't any better than what you already have. The Java clone includes "Double_Sword" here, which is identical in stats to the Sword of Deflection from the last level but without the ability to disenchant. I elected to keep this spawn chance here, even though not supported by screenshots, because the java clone has it, and it fits in with the guide's note that the weapons here aren't worth picking up because they aren't better than what you already have (so gameplay is unchanged if I'm wrong and its Halberd). Also if Double_Sword does not go here... then it doesn't have a mission it spawns in. Follow-up note - [this guide](https://emeth-.github.io/iom-reverse-engineering/online_guides/backups_of_guides/GoldEyeGriffin%20got%20their%20homepage%20at%20Neopets.com.html), which is of iom v2 (with no enchantments) puts the double sword in mission 6 instead of the Sword of Deflection. That tells us that either double sword was removed in v3, or it was put as an alternative spawn in mission 7 as we have it.
 
 * Mission 8 = ["Magic_Lightening_Spell", "Magic_Lightening_Spell"]. Single screenshot we have shows double Magic_Lightening_Spell. Text on video https://www.youtube.com/watch?v=644qdG2yd1w notes that you need to pickup a Magic_Lightening_Spell here for your Grundo. Java clone includes double "Magic_Lightening_Spell", so we'll roll with it.
 
-* Mission 9 = ["Double_Axe", "Double_Axe"]. We have no screenshots or guides for this, so we'll just accept the Java clone's value.
+* Mission 9 = ["Double_Axe", "Double_Axe"]. The java clone values are matched by (this guide)[https://emeth-.github.io/iom-reverse-engineering/online_guides/backups_of_guides/GoldEyeGriffin%20got%20their%20homepage%20at%20Neopets.com.html], though the guide is for v2 of IOM (and not v3) - so we'll go with these values.  
 
-* Mission 10 = ["Double_Axe", "Magic_Lightening_Spell"]. We have no screenshots or guides for this, so we'll just accept the Java clone's value.
+* Mission 10 = ["Double_Axe", "Magic_Lightening_Spell"]. The java clone values are matched by (this guide)[https://emeth-.github.io/iom-reverse-engineering/online_guides/backups_of_guides/GoldEyeGriffin%20got%20their%20homepage%20at%20Neopets.com.html], though the guide is for v2 of IOM (and not v3) - so we'll go with these values.  
 
 
 
@@ -139,9 +139,9 @@ There is some randomness in which weapon combinations will spawn. For example, i
 
 * Mission 8 = ["Leather_Armor", "Leather_Armor"]. Our sole screenshot has double Leather_Armor. The Java clone has Plate_Armor and Chainmail as the spawn options, so it's wrong for leaving out Leather_Armor. We cannot know whether double Leather_Armor or Leather_Armor + X is correct here. I elect to go with double Leather_Armor to match the screenshots. The core concept seems to be that this armor (at +3) is worse than what you already have, but better than nothing. Including Plate_Armor (+5) or Chainmail (+4) would go against that concept.
 
-* Mission 9 = ["Amulet_of_Teleportation", "Chainmail"]. We have no screenshots or guides for this, so we'll just accept the Java clone's value.
+* Mission 9 = ["Amulet_of_Teleportation", "Chainmail"]. The java clone values are matched by (this guide)[https://emeth-.github.io/iom-reverse-engineering/online_guides/backups_of_guides/GoldEyeGriffin%20got%20their%20homepage%20at%20Neopets.com.html], though the guide is for v2 of IOM (and not v3) - so we'll go with these values.  
 
-* Mission 10 = ["Plate_Armor", "Chainmail"]. We have no screenshots or guides for this, so we'll just accept the Java clone's value.
+* Mission 10 = ["Plate_Armor", "Chainmail"]. The java clone values are matched by (this guide)[https://emeth-.github.io/iom-reverse-engineering/online_guides/backups_of_guides/GoldEyeGriffin%20got%20their%20homepage%20at%20Neopets.com.html], though the guide is for v2 of IOM (and not v3) - so we'll go with these values.  
 
 ### Foes
 
@@ -174,15 +174,3 @@ I believe that it is a purely random chance, but my screenshots make it seem lik
 [Spells reviewed here](spells.md)
 
 [Shields reviewed here](shields.md)
-
-### List of Unknowns
-
-* We do not know which potions spawn in Mission 9 and 10. (Does not change gameplay)
-
-* We assume item spawn chances do not change between battles in a mission. Is it possible they do? (If so, does change gameplay)
-
-* We have no proof that "Hammer" should spawn as an attack item in Mission 2.
-
-* We have no proof that "Double_Sword" should spawn as an attack item in Mission 7.
-
-* We have no knowledge of what ATTACK or DEFENSE items spawn in Missions 9 and 10 - but at that point, a players items should be maxed out, so this shouldn't affect gameplay unless one of their soldiers gets converted.
