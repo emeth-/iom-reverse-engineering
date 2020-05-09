@@ -23,10 +23,13 @@ Youtube Videos:
 * https://www.youtube.com/watch?v=QJCtRCyfVww (levels 1, 2, 3)
 * https://www.youtube.com/watch?v=644qdG2yd1w
 
+2005 Battle Strategy Clone of game (javascript, v2 of IOM rather than v3):
+* https://web.archive.org/web/20040206045508/http://home.pacbell.net/jeffpeck/iomscript.html
+
 [2015] Java Clone of game (author = darkflagrance):
-- [Announcement](http://www.bay12forums.com/smf/index.php?topic=154262.0)
-- [Source](https://drive.google.com/open?id=0B2Y0VMXUm08mRkNremE5ZVV0bnc)
-- [Compiled Game](https://drive.google.com/file/d/0B2Y0VMXUm08maEFyTE5meG9hOFk/view?usp=sharing)
+* [Announcement](http://www.bay12forums.com/smf/index.php?topic=154262.0)
+* [Source](https://drive.google.com/open?id=0B2Y0VMXUm08mRkNremE5ZVV0bnc)
+* [Compiled Game](https://drive.google.com/file/d/0B2Y0VMXUm08maEFyTE5meG9hOFk/view?usp=sharing)
 
 ## Reverse Engineering Strategy
 
