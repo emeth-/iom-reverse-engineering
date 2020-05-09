@@ -8,12 +8,13 @@ First, the resources we have available to use to reverse engineer the game.
 
 Game Guides:
 * http://www.jellyneo.net/?go=invasion_of_meridell
+* http://www.neopets.com/~happylark (mirror)
+* http://www.neopets.com/~Demeanours (mirror)
+* http://www.neopets.com/~GoldEyeGriffin (mirror)
 * http://www.thedailyneopets.com/neopets-games/invasion-of-meridell/
 * https://www.neofriends.net/threads/guide-invasion-of-meridell-in-depth.26528/
 * http://www.neocodex.us/forum/topic/109241-invasion-of-meridell-guide/
 * http://neopointsdeals.com/neopets-invasion-of-meridell-guide/
-* http://home.neopets.com/templates/homepage.phtml?pet_name=happylark
-* http://www.neopets.com/~Demeanours
 * http://www.angelfire.com/pop2/krillin373/invasionm.html
 * https://www.pinkpt.com/neodex/index.php?title=Invasion_of_Meridell
 
