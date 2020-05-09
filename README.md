@@ -141,7 +141,7 @@ There is some randomness in which weapon combinations will spawn. For example, i
 
 * Mission 9 = ["Amulet_of_Teleportation", "Chainmail"]. The java clone values are matched by [this guide](https://emeth-.github.io/iom-reverse-engineering/online_guides/backups_of_guides/GoldEyeGriffin%20got%20their%20homepage%20at%20Neopets.com.html), though the guide is for v2 of IOM (and not v3) - so we'll go with these values.  
 
-* Mission 10 = ["Plate_Armor", "Chainmail"]. The java clone values are matched by [this guide]](https://emeth-.github.io/iom-reverse-engineering/online_guides/backups_of_guides/GoldEyeGriffin%20got%20their%20homepage%20at%20Neopets.com.html), though the guide is for v2 of IOM (and not v3) - so we'll go with these values.  
+* Mission 10 = ["Plate_Armor", "Chainmail"]. The java clone values are matched by [this guide](https://emeth-.github.io/iom-reverse-engineering/online_guides/backups_of_guides/GoldEyeGriffin%20got%20their%20homepage%20at%20Neopets.com.html), though the guide is for v2 of IOM (and not v3) - so we'll go with these values.  
 
 ### Foes
 
