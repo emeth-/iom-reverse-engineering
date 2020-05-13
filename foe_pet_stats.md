@@ -157,6 +157,8 @@ Unfortunately the guide is slightly ambiguous here. It speaks of the limits (max
 
 The source of the guide is a post in the Neopets 'newspaper' itself, but it is player submitted and shows a simplistic level of knowledge about the game, particularly in the second wave. The defense value of 21 directly contradicts what we see in another guide with more information about the second wave (which pegs the value at 25)... therefore, I'm inclined to believe this guide with these 'limit'/'exactly' values are incorrect as to the entire second wave, but may be correct at a specific point in time / specific mission (perhaps mission 9 - where another guide notes "Mission 9 is easy just very very long, the Grarrls are back but don't hit nearly as often, however their defence has gotten boosted, shame").
 
+NEW NOTE - I now believe this guide was correct as to the values for Buzz/Grarrl in v2 of IoM, before enchantments were introduced. When v3 was released, the Buzz/Grarrl stats were updated.
+
 Factoring in all the above, we will adjust the mission 6 values to these numbers:
 
 Draco_Buzz
